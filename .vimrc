@@ -75,6 +75,12 @@ echo "Welcome To Vim, Megrez >^.^<"
 set noautoindent
 set nocindent
 set ts=4
+set shiftwidth=4
+set autoindent
+set backspace=2
+set cindent shiftwidth=4
+set smartindent
+set ai!
 " Custom Mapping Keys
 noremap - x
 nnoremap \ dd
@@ -165,9 +171,13 @@ if has("autocmd")
     \ if line("'\"") > 1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
-
   augroup END
 
+  augroup rubyDev
+  autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
+  autocmd FileType ruby setlocal autoindent
+  autocmd FileType ruby setlocal expandtab
+  augroup END
 else
 
   set noautoindent		" always set autoindenting on
