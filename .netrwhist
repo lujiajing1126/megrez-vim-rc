@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/System/Library/Extensions/RT2870USBWirelessDriver.kext'
+let g:netrw_dirhist_2='/usr/local/Cellar/openvpn/2.3.4_1/share/doc/openvpn/sample'
+let g:netrw_dirhist_3='/Users/megrez/Code/opensource/torch/.git'
